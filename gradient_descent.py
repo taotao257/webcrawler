@@ -38,8 +38,8 @@ def gradient_descent(x, y, w_init, b_init, learning_rate, cost_function, gradien
     for i in range(run_iter):
         w_gradient, b_gradient = gradient_function(x, y, w, b)
 
-        w = w - w_gradient * learninig_rate
-        b = b - b_gradient * learninig_rate
+        w = w - w_gradient * learning_rate
+        b = b - b_gradient * learning_rate
         cost = cost_function(x, y, w, b)
         
         w_hist.append(w)
